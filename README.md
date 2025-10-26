@@ -48,3 +48,4 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
 1. **Clone o repositório:**
    ```bash
   [ git clone https://github.com/seuusuario/FS_app.git](https://github.com/0llrayll0-beep/FS_app.git)
+  ```
