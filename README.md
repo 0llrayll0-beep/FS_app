@@ -34,7 +34,7 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
 | Tecnologia | Função |
 |-------------|--------|
 | **Flutter (Dart)** | Framework principal de desenvolvimento |
-| **Firebase Auth** | Autenticação de usuários |
+| **Firebase emulator** | emular o firebase para o celular |
 | **Firebase Firestore** | Banco de dados em nuvem |
 | **Firebase Storage** | Armazenamento de imagens |
 | **Google ML Kit** | Reconhecimento de texto (OCR) |
