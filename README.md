@@ -38,7 +38,6 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
 | **Firebase Firestore** | Banco de dados em nuvem |
 | **Firebase Storage** | Armazenamento de imagens |
 | **Google ML Kit** | Reconhecimento de texto (OCR) |
-| **Provider / Riverpod (opcional)** | Gerenciamento de estado |
 | **Material 3 Design** | Interface moderna e responsiva |
 
 ---
@@ -47,5 +46,4 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
 
 1. **Clone o repositório:**
    ```bash
-  [ git clone https://github.com/seuusuario/FS_app.git](https://github.com/0llrayll0-beep/FS_app.git)
-  ```
+   git clone https://github.com/0llrayll0-beep/FS_app.git
