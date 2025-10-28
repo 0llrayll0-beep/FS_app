@@ -1,0 +1,18 @@
+{
+  "plates": [
+    {
+      "plate": "ABC-1234",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": "2020",
+      "status": "Ativo"
+    },
+    {
+      "plate": "XYZ-5678",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": "2019",
+      "status": "Inativo"
+    }
+  ]
+}

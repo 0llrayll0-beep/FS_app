@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  FS_app
 
 **FS_app** é um aplicativo desenvolvido em **Flutter (Dart)** para **leitura automática de placas de veículos** utilizando o **Google ML Kit** e **integração em tempo real com o Firebase**.  
@@ -47,3 +48,21 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/0llrayll0-beep/FS_app.git
+=======
+# app_fs_new
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+>>>>>>> 36123b2 (Primeiro commit)

@@ -1,0 +1,161 @@
+    {
+      'plate': 'ABC1D23',
+      'brand': 'Toyota',
+      'model': 'Corolla',
+      'year': '2020',
+      'status': 'Ativo'
+    },
+    {
+      'plate': 'XYZ9Z99',
+      'brand': 'Honda',
+      'model': 'Civic',
+      'year': '2018',
+      'status': 'Inativo'
+    },
+    {
+      'plate': 'DEF2G45',
+      'brand': 'Ford',
+      'model': 'Focus',
+      'year': '2021',
+      'status': 'Ativo'
+    },
+  {
+    "plate": "XSQ0D42",
+    "brand": "Fiat",
+    "model": "Argo",
+    "year": "2020",
+    "status": "Inativo"
+  },
+  {
+    "plate": "EAP1S38",
+    "brand": "Renault",
+    "model": "Duster",
+    "year": "2015",
+    "status": "Ativo"
+  },
+  {
+    "plate": "UIU7E65",
+    "brand": "Honda",
+    "model": "Civic",
+    "year": "2018",
+    "status": "Inativo"
+  },
+  {
+    "plate": "WGA2E81",
+    "brand": "Chevrolet",
+    "model": "Prisma",
+    "year": "2015",
+    "status": "Inativo"
+  },
+  {
+    "plate": "XFD8A23",
+    "brand": "Fiat",
+    "model": "Argo",
+    "year": "2023",
+    "status": "Ativo"
+  },
+  {
+    "plate": "KJC5J65",
+    "brand": "Hyundai",
+    "model": "HB20",
+    "year": "2020",
+    "status": "Ativo"
+  },
+  {
+    "plate": "SUR7S17",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": "2015",
+    "status": "Ativo"
+  },
+  {
+    "plate": "HNV9P17",
+    "brand": "Ford",
+    "model": "Ka",
+    "year": "2021",
+    "status": "Inativo"
+  },
+  {
+    "plate": "CKF5N55",
+    "brand": "Ford",
+    "model": "Fiesta",
+    "year": "2015",
+    "status": "Inativo"
+  },
+  {
+    "plate": "NMO4M64",
+    "brand": "Peugeot",
+    "model": "3008",
+    "year": "2018",
+    "status": "Ativo"
+  },
+  {
+    "plate": "XSQ0D42",
+    "brand": "Fiat",
+    "model": "Argo",
+    "year": "2020",
+    "status": "Inativo"
+  },
+  {
+    "plate": "EAP1S38",
+    "brand": "Renault",
+    "model": "Duster",
+    "year": "2015",
+    "status": "Ativo"
+  },
+  {
+    "plate": "UIU7E65",
+    "brand": "Honda",
+    "model": "Civic",
+    "year": "2018",
+    "status": "Inativo"
+  },
+  {
+    "plate": "WGA2E81",
+    "brand": "Chevrolet",
+    "model": "Prisma",
+    "year": "2015",
+    "status": "Inativo"
+  },
+  {
+    "plate": "XFD8A23",
+    "brand": "Fiat",
+    "model": "Argo",
+    "year": "2023",
+    "status": "Ativo"
+  },
+  {
+    "plate": "KJC5J65",
+    "brand": "Hyundai",
+    "model": "HB20",
+    "year": "2020",
+    "status": "Ativo"
+  },
+  {
+    "plate": "SUR7S17",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": "2015",
+    "status": "Ativo"
+  },
+  {
+    "plate": "HNV9P17",
+    "brand": "Ford",
+    "model": "Ka",
+    "year": "2021",
+    "status": "Inativo"
+  },
+  {
+    "plate": "CKF5N55",
+    "brand": "Ford",
+    "model": "Fiesta",
+    "year": "2015",
+    "status": "Inativo"
+  },
+  {
+    "plate": "NMO4M64",
+    "brand": "Peugeot",
+    "model": "3008",
+    "year": "2018",
+    "status": "Ativo"
+  }

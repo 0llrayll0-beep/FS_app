@@ -1,0 +1,66 @@
+mutation SeedData @auth(level: USER) {
+  licensePlateScan_insertMany(data: [
+    {
+      plateNumber: "ABC1234",
+      scanDate: "2024-01-01T00:00:00Z",
+      scanMethod: "Automatic",
+      location: "Some Location",
+      imageUrl: "http://example.com/image1.jpg"
+    },
+    {
+      plateNumber: "DEF5678",
+      scanDate: "2024-01-02T00:00:00Z",
+      scanMethod: "Manual",
+      location: "Another Location",
+      imageUrl: "http://example.com/image2.jpg"
+    }
+  ])
+  user_insertMany(data: [
+    {
+      displayName: "Test User 1",
+      createdAt: "2024-01-01T00:00:00Z",
+      email: "test1@example.com",
+      photoUrl: "http://example.com/photo1.jpg"
+    },
+    {
+      displayName: "Test User 2",
+      createdAt: "2024-01-02T00:00:00Z",
+      email: "test2@example.com",
+      photoUrl: "http://example.com/photo2.jpg"
+    }
+  ])
+  userNote_insertMany(data: [
+    {
+      content: "Some Note 1",
+      createdAt: "2024-01-03T00:00:00Z",
+      tags: ["tag1", "tag2"]
+    },
+    {
+      content: "Some Note 2",
+      createdAt: "2024-01-04T00:00:00Z",
+      tags: ["tag3", "tag4"]
+    }
+  ])
+  vehicleInfo_insertMany(data: [
+    {
+      plateNumber: "ABC1234",
+      retrievedAt: "2024-01-05T00:00:00Z",
+      make: "Toyota",
+      model: "Camry",
+      year: 2020,
+      color: "Red",
+      chassisNumber: "VIN123",
+      lastRegistrationDate: "2023-01-01"
+    },
+    {
+      plateNumber: "DEF5678",
+      retrievedAt: "2024-01-06T00:00:00Z",
+      make: "Honda",
+      model: "Civic",
+      year: 2022,
+      color: "Blue",
+      chassisNumber: "VIN456",
+      lastRegistrationDate: "2023-02-01"
+    }
+  ])
+}

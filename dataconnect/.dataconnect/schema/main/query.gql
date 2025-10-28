@@ -1,0 +1,214 @@
+extend type Query {
+  """
+  ✨ Look up a single `LicensePlateScan` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  licensePlateScan(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: LicensePlateScan_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: LicensePlateScan_FirstRow
+  ): LicensePlateScan @fdc_generated(from: "LicensePlateScan", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `User` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  user(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+  ): User @fdc_generated(from: "User", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `UserNote` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  userNote(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: UserNote_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserNote_FirstRow
+  ): UserNote @fdc_generated(from: "UserNote", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `VehicleInfo` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  vehicleInfo(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: VehicleInfo_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VehicleInfo_FirstRow
+  ): VehicleInfo @fdc_generated(from: "VehicleInfo", purpose: QUERY_SINGLE)
+  """
+  ✨ List `LicensePlateScan` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  licensePlateScans(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: LicensePlateScan_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [LicensePlateScan_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: LicensePlateScan_Having
+  ): [LicensePlateScan!]! @fdc_generated(from: "LicensePlateScan", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `User` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  users(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: User_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [User_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: User_Having
+  ): [User!]! @fdc_generated(from: "User", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `UserNote` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  userNotes(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserNote_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserNote_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserNote_Having
+  ): [UserNote!]! @fdc_generated(from: "UserNote", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `VehicleInfo` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  vehicleInfos(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: VehicleInfo_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [VehicleInfo_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: VehicleInfo_Having
+  ): [VehicleInfo!]! @fdc_generated(from: "VehicleInfo", purpose: QUERY_MULTIPLE)
+}

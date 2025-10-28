@@ -1,0 +1,450 @@
+extend type Mutation {
+  """
+  ✨ Insert a single `LicensePlateScan` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  licensePlateScan_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: LicensePlateScan_Data!
+  ): LicensePlateScan_KeyOutput! @fdc_generated(from: "LicensePlateScan", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `User` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  user_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: User_Data!
+  ): User_KeyOutput! @fdc_generated(from: "User", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserNote` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userNote_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserNote_Data!
+  ): UserNote_KeyOutput! @fdc_generated(from: "UserNote", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VehicleInfo` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  vehicleInfo_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VehicleInfo_Data!
+  ): VehicleInfo_KeyOutput! @fdc_generated(from: "VehicleInfo", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert `LicensePlateScan` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  licensePlateScan_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [LicensePlateScan_Data!]!
+  ): [LicensePlateScan_KeyOutput!]! @fdc_generated(from: "LicensePlateScan", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `User` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  user_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [User_Data!]!
+  ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserNote` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userNote_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserNote_Data!]!
+  ): [UserNote_KeyOutput!]! @fdc_generated(from: "UserNote", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VehicleInfo` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  vehicleInfo_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VehicleInfo_Data!]!
+  ): [VehicleInfo_KeyOutput!]! @fdc_generated(from: "VehicleInfo", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert or update a single `LicensePlateScan` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `LicensePlateScan`.
+  """
+  licensePlateScan_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: LicensePlateScan_Data!
+  ): LicensePlateScan_KeyOutput! @fdc_generated(from: "LicensePlateScan", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `User` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
+  """
+  user_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: User_Data!
+  ): User_KeyOutput! @fdc_generated(from: "User", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserNote` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `UserNote`.
+  """
+  userNote_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserNote_Data!
+  ): UserNote_KeyOutput! @fdc_generated(from: "UserNote", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VehicleInfo` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `VehicleInfo`.
+  """
+  vehicleInfo_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VehicleInfo_Data!
+  ): VehicleInfo_KeyOutput! @fdc_generated(from: "VehicleInfo", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update `LicensePlateScan` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `LicensePlateScan`.
+  """
+  licensePlateScan_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [LicensePlateScan_Data!]!
+  ): [LicensePlateScan_KeyOutput!]! @fdc_generated(from: "LicensePlateScan", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `User` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
+  """
+  user_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [User_Data!]!
+  ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `UserNote` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `UserNote`.
+  """
+  userNote_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [UserNote_Data!]!
+  ): [UserNote_KeyOutput!]! @fdc_generated(from: "UserNote", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `VehicleInfo` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `VehicleInfo`.
+  """
+  vehicleInfo_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [VehicleInfo_Data!]!
+  ): [VehicleInfo_KeyOutput!]! @fdc_generated(from: "VehicleInfo", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Update a single `LicensePlateScan` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `LicensePlateScan` or `null` if not found.
+  """
+  licensePlateScan_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: LicensePlateScan_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: LicensePlateScan_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: LicensePlateScan_Data!
+  ): LicensePlateScan_KeyOutput @fdc_generated(from: "LicensePlateScan", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `User` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `User` or `null` if not found.
+  """
+  user_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: User_Data!
+  ): User_KeyOutput @fdc_generated(from: "User", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserNote` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `UserNote` or `null` if not found.
+  """
+  userNote_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: UserNote_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserNote_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserNote_Data!
+  ): UserNote_KeyOutput @fdc_generated(from: "UserNote", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VehicleInfo` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `VehicleInfo` or `null` if not found.
+  """
+  vehicleInfo_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: VehicleInfo_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VehicleInfo_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VehicleInfo_Data!
+  ): VehicleInfo_KeyOutput @fdc_generated(from: "VehicleInfo", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update `LicensePlateScan` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  licensePlateScan_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: LicensePlateScan_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: LicensePlateScan_Data!
+  ): Int! @fdc_generated(from: "LicensePlateScan", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `User` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  user_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: User_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: User_Data!
+  ): Int! @fdc_generated(from: "User", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserNote` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userNote_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserNote_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserNote_Data!
+  ): Int! @fdc_generated(from: "UserNote", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VehicleInfo` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  vehicleInfo_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VehicleInfo_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VehicleInfo_Data!
+  ): Int! @fdc_generated(from: "VehicleInfo", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Delete a single `LicensePlateScan` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  licensePlateScan_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: LicensePlateScan_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: LicensePlateScan_FirstRow
+  ): LicensePlateScan_KeyOutput @fdc_generated(from: "LicensePlateScan", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `User` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  user_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+  ): User_KeyOutput @fdc_generated(from: "User", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserNote` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userNote_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: UserNote_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserNote_FirstRow
+  ): UserNote_KeyOutput @fdc_generated(from: "UserNote", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VehicleInfo` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  vehicleInfo_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: VehicleInfo_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VehicleInfo_FirstRow
+  ): VehicleInfo_KeyOutput @fdc_generated(from: "VehicleInfo", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete `LicensePlateScan` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  licensePlateScan_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: LicensePlateScan_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `User` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  user_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: User_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "User", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserNote` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userNote_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserNote_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VehicleInfo` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  vehicleInfo_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VehicleInfo_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo", purpose: DELETE_MULTIPLE)
+}

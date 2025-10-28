@@ -1,0 +1,485 @@
+extend type LicensePlateScan {
+  """
+  ✨ List `UserNote` objects in a one-to-many relationship (where `UserNote`.`licensePlateScan` is this object).
+  """
+  userNotes_on_licensePlateScan(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserNote_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserNote_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserNote_Having
+  ): [UserNote!]! @fdc_generated(from: "UserNote.licensePlateScan", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `VehicleInfo` objects in a one-to-many relationship (where `VehicleInfo`.`licensePlateScan` is this object).
+  """
+  vehicleInfos_on_licensePlateScan(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: VehicleInfo_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [VehicleInfo_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: VehicleInfo_Having
+  ): [VehicleInfo!]! @fdc_generated(from: "VehicleInfo.licensePlateScan", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "LicensePlateScan", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table.
+  """
+  _count: Int! @fdc_generated(from: "LicensePlateScan.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `imageUrl` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  imageUrl_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.imageUrl", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `location` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  location_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.location", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `plateNumber` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  plateNumber_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.plateNumber", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `scanDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  scanDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.scanDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `scanMethod` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  scanMethod_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.scanMethod", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `LicensePlateScan` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "LicensePlateScan.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `scanDate` field in the `LicensePlateScan` table.
+  """
+  scanDate_min: Timestamp @fdc_generated(from: "LicensePlateScan.scanDate", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `scanDate` field in the `LicensePlateScan` table.
+  """
+  scanDate_max: Timestamp @fdc_generated(from: "LicensePlateScan.scanDate", purpose: QUERY_MAX)
+}
+extend type User {
+  """
+  ✨ List `LicensePlateScan` objects in a one-to-many relationship (where `LicensePlateScan`.`user` is this object).
+  """
+  licensePlateScans_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: LicensePlateScan_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [LicensePlateScan_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: LicensePlateScan_Having
+  ): [LicensePlateScan!]! @fdc_generated(from: "LicensePlateScan.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `UserNote` objects in a one-to-many relationship (where `UserNote`.`user` is this object).
+  """
+  userNotes_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserNote_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserNote_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserNote_Having
+  ): [UserNote!]! @fdc_generated(from: "UserNote.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "User", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `User` table.
+  """
+  _count: Int! @fdc_generated(from: "User.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `displayName` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  displayName_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.displayName", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `email` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  email_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.email", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `photoUrl` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  photoUrl_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.photoUrl", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `User` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "User.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `User` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "User.createdAt", purpose: QUERY_MAX)
+}
+extend type UserNote {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "UserNote", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `UserNote` table.
+  """
+  _count: Int! @fdc_generated(from: "UserNote.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `content` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  content_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.content", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `licensePlateScanId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  licensePlateScanId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.licensePlateScanId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `UserNote` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "UserNote.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `UserNote` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "UserNote.createdAt", purpose: QUERY_MAX)
+}
+extend type VehicleInfo {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "VehicleInfo", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table.
+  """
+  _count: Int! @fdc_generated(from: "VehicleInfo.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `chassisNumber` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  chassisNumber_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.chassisNumber", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `color` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  color_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.color", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `lastRegistrationDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  lastRegistrationDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.lastRegistrationDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `licensePlateScanId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  licensePlateScanId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.licensePlateScanId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `make` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  make_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.make", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `model` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  model_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.model", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `plateNumber` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  plateNumber_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.plateNumber", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `retrievedAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  retrievedAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.retrievedAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `VehicleInfo` table where the `year` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  year_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "VehicleInfo.year", purpose: QUERY_COUNT)
+  """
+  ✨ Sum the `year` field in the `VehicleInfo` table.
+  """
+  year_sum(
+    """
+    Set to true to sum the distinct values.
+    """
+    distinct: Boolean = false
+  ): Int @fdc_generated(from: "VehicleInfo.year", purpose: QUERY_SUM)
+  """
+  ✨ Average the `year` field in the `VehicleInfo` table.
+  """
+  year_avg(
+    """
+    Set to true to average the distinct values.
+    """
+    distinct: Boolean = false
+  ): Float @fdc_generated(from: "VehicleInfo.year", purpose: QUERY_AVG)
+  """
+  ✨ Minimum of the `lastRegistrationDate` field in the `VehicleInfo` table.
+  """
+  lastRegistrationDate_min: Date @fdc_generated(from: "VehicleInfo.lastRegistrationDate", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `retrievedAt` field in the `VehicleInfo` table.
+  """
+  retrievedAt_min: Timestamp @fdc_generated(from: "VehicleInfo.retrievedAt", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `year` field in the `VehicleInfo` table.
+  """
+  year_min: Int @fdc_generated(from: "VehicleInfo.year", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `lastRegistrationDate` field in the `VehicleInfo` table.
+  """
+  lastRegistrationDate_max: Date @fdc_generated(from: "VehicleInfo.lastRegistrationDate", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `retrievedAt` field in the `VehicleInfo` table.
+  """
+  retrievedAt_max: Timestamp @fdc_generated(from: "VehicleInfo.retrievedAt", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `year` field in the `VehicleInfo` table.
+  """
+  year_max: Int @fdc_generated(from: "VehicleInfo.year", purpose: QUERY_MAX)
+}

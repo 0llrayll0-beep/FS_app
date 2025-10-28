@@ -1,0 +1,35 @@
+type User @table {
+  displayName: String!
+  createdAt: Timestamp!
+  email: String
+  photoUrl: String
+}
+
+type LicensePlateScan @table {
+  plateNumber: String!
+  scanDate: Timestamp!
+  scanMethod: String!
+  imageUrl: String
+  location: String
+  user: User
+}
+
+type VehicleInfo @table {
+  plateNumber: String!
+  retrievedAt: Timestamp!
+  make: String
+  model: String
+  year: Int
+  color: String
+  chassisNumber: String
+  lastRegistrationDate: Date
+  licensePlateScan: LicensePlateScan
+}
+
+type UserNote @table {
+  content: String!
+  createdAt: Timestamp!
+  tags: [String]
+  licensePlateScan: LicensePlateScan
+  user: User
+}

@@ -1,0 +1,40 @@
+extend type LicensePlateScan {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "LicensePlateScan", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `LicensePlateScan`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID @fdc_generated(from: "LicensePlateScan.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type User {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "User", purpose: IMPLICIT_KEY_FIELD)
+}
+extend type UserNote {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "UserNote", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserNote`.`licensePlateScan`. It must match the value of `LicensePlateScan`.`id`. See `@ref` for how to customize it.
+  """
+  licensePlateScanId: UUID @fdc_generated(from: "UserNote.licensePlateScan", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserNote`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID @fdc_generated(from: "UserNote.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VehicleInfo {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "VehicleInfo", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VehicleInfo`.`licensePlateScan`. It must match the value of `LicensePlateScan`.`id`. See `@ref` for how to customize it.
+  """
+  licensePlateScanId: UUID @fdc_generated(from: "VehicleInfo.licensePlateScan", purpose: IMPLICIT_REF_FIELD)
+}

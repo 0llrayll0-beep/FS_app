@@ -1,0 +1,36 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: {
+    displayName: "New User",
+    email: "newuser@example.com",
+    createdAt_expr: "request.time"
+  })
+}
+
+query ListLicensePlateScans @auth(level: USER) {
+  licensePlateScans {
+    id
+    plateNumber
+    scanDate
+  }
+}
+
+mutation UpdateVehicleInfo($id: UUID!, $color: String) @auth(level: USER) {
+  vehicleInfo_update(
+    id: $id,
+    data: {
+      color: $color
+    }
+  )
+}
+
+query GetUserNote @auth(level: USER) {
+  userNotes {
+    id
+    content
+    createdAt
+    user {
+      id
+      displayName
+    }
+  }
+}
