@@ -1,16 +1,16 @@
-# 🚗 FS_app
+#  FS_app
 
 **FS_app** é um aplicativo desenvolvido em **Flutter (Dart)** para **leitura automática de placas de veículos** utilizando o **Google ML Kit** e **integração em tempo real com o Firebase**.  
 O projeto combina **visão computacional**, **design moderno** e **armazenamento em nuvem**, oferecendo uma solução inteligente e acessível para gerenciamento de dados automotivos.
 
 ---
 
-## 🧠 Funcionalidades Principais
+##  Funcionalidades Principais
 
-- 🤖 **Leitura Automática de Placas (OCR):**  
+-  **Leitura Automática de Placas (OCR):**  
   O app usa o **Google ML Kit** para detectar e interpretar o texto das placas diretamente pela câmera.  
 
-- ☁️ **Banco de Dados em Nuvem (Firebase Firestore):**  
+-  **Banco de Dados em Nuvem (Firebase Firestore):**  
   Armazena e sincroniza as informações de cada veículo:
   - Placa  
   - Marca  
@@ -18,18 +18,18 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
   - Ano  
   - Status (Ativo / Inativo)
 
-- 🔐 **Autenticação (Firebase Auth):**  
+-  **Autenticação (Firebase Auth):**  
   Login e cadastro de usuários com autenticação segura via e-mail e senha.
 
-- 🧱 **Interface Moderna (Flutter + Material Design):**  
+-  **Interface Moderna (Flutter + Material Design):**  
   Design responsivo e intuitivo, adaptado para Android e iOS.
 
-- 📸 **Integração com a Câmera:**  
+-  **Integração com a Câmera:**  
   Captura e leitura instantânea de imagens de placas com alta precisão.
 
 ---
 
-## 🧩 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 | Tecnologia | Função |
 |-------------|--------|
@@ -42,7 +42,7 @@ O projeto combina **visão computacional**, **design moderno** e **armazenamento
 
 ---
 
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 1. **Clone o repositório:**
    ```bash
